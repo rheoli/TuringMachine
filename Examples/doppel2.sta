@@ -1,0 +1,16 @@
+# State-Tabelle zur Turingmaschine
+# [This State] [Input] [Next State] [Output] [Direction]
+       1          0         HALT          0          L
+       1          A         2          A          R
+       2          0         3          0          L
+       2          A         2          A          R
+       3          0         -          -          -
+       3          A         4          0          L
+       4          0         5          0          L
+       4          A         4          A          L
+       5          0         6          C          L
+       5          C         5          C          L
+       6          0         7          C          R
+       6          C         -          -          -
+       7          0         1          0          R
+       7          C         7          C          R
